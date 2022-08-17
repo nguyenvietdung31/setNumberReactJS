@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 
 function App() {
 
-  const [number, setNumber] = useState(0);///khởi tạo state với giá trị ban đầu bằng 0
-  useEffect( () => {
-    if(number>=10)//show alert when number greater than 10
+  const [number, setNumber] = useState(0);///initialize state with initial value of 0
+  useEffect( () => { //show alert when number greater than 10 or less than -10
+    if(number>=10)
      alert('Max value')
     else if (number<=-10){
       alert('Min value')
@@ -14,15 +14,11 @@ function App() {
     else {     
     }
   })
-  // useEffect( () => {
-  //   if(number<=-10)//show alert when number less than -10
-  //    alert('Min value')
-  // })
   const numberIncrease = () => { //increase number
     setNumber(number+2);
   }
 
-  const numberDecrease = () => { ///decrease number
+  const numberDecrease = () => { //decrease number
     setNumber(number-2);
   }
 
