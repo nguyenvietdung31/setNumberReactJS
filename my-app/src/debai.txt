@@ -1,0 +1,16 @@
+II, BÀI TẬP
+
+Input: Viết đơn giản 1 chức năng có 2 button Cộng (+) và  Trừ (-), 1 trường dữ liệu hiển thị số (default = 0
+
+Khi bấm button cộng, trừ sẽ hiển thị giá trị thay đổi trên màn hình cùng lúc luôn
+
+
+
+Output: Mỗi lần bấm cộng hoặc trừ, sẽ tăng/giảm thêm 2 đơn vị.
+
+Max value = 10 thì disable button cộng + hiển thị Alert: "Max value". khi bấm Trừ (giá trị hiện tại là 8) thì không disable button nào.
+Min value = -10 thì disable button trừ + hiển thị Alert: "Min value". Khi bấm Cộng (giá trị hiện tại là -8) thì không disable button nào.
+
+
+
+Yêu cầu: sử dụng những kiến thức đã học về ReactJS
