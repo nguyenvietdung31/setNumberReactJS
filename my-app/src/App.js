@@ -5,23 +5,25 @@ import { useEffect, useState } from "react";
 function App() {
 
   const [number, setNumber] = useState(0);///khởi tạo state với giá trị ban đầu bằng 0
-  
+  useEffect( () => {
+    if(number>=10)//show alert when number greater than 10
+     alert('Max value')
+    else if (number<=-10){
+      alert('Min value')
+    } 
+    else {     
+    }
+  })
+  // useEffect( () => {
+  //   if(number<=-10)//show alert when number less than -10
+  //    alert('Min value')
+  // })
   const numberIncrease = () => { //increase number
     setNumber(number+2);
-  //   if(number>=8){
-  //     alert('Max Value')
-  //     document.getElementById("numberIncrease").disabled = true;
-  //   }
-  //   document.getElementById("numberDecrease").disabled = false;
   }
 
   const numberDecrease = () => { ///decrease number
     setNumber(number-2);
-    // if(number<=-8){
-    //   alert('Min Value')
-    //   document.getElementById("numberDecrease").disabled = true;
-    // }
-    // document.getElementById("numberIncrease").disabled = false;
   }
 
   return(
